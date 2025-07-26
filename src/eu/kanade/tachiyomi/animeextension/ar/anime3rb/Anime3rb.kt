@@ -1,5 +1,6 @@
 package eu.kanade.tachiyomi.animeextension.ar.anime3rb
 
+<<<<<<< HEAD
 import eu.kanade.tachiyomi.animesource.model.SAnime
 import eu.kanade.tachiyomi.animesource.model.AnimesPage
 import eu.kanade.tachiyomi.animesource.model.SEpisode
@@ -7,6 +8,11 @@ import eu.kanade.tachiyomi.animesource.model.Video
 import eu.kanade.tachiyomi.animesource.AnimeHttpSource
 import okhttp3.Request
 import okhttp3.Response
+=======
+import eu.kanade.tachiyomi.animesource.AnimeHttpSource
+import okhttp3.Request
+import org.jsoup.Jsoup
+>>>>>>> c9624b8d6067dd62381ef1ba0db054ef89659cc7
 
 class Anime3rb : AnimeHttpSource() {
     override val name = "Anime3rb"
@@ -15,6 +21,7 @@ class Anime3rb : AnimeHttpSource() {
     override val supportsLatest = true
 
     override fun popularAnimeRequest(page: Int): Request {
+<<<<<<< HEAD
         return GET("$baseUrl/anime-list/page/$page/", headers)
     }
 
@@ -68,4 +75,10 @@ class Anime3rb : AnimeHttpSource() {
     override fun searchAnimeParse(response: Response): AnimesPage {
         return popularAnimeParse(response)
     }
+=======
+        return GET("$baseUrl/anime-list/page/$page/")
+    }
+
+    // More functions to be implemented
+>>>>>>> c9624b8d6067dd62381ef1ba0db054ef89659cc7
 }

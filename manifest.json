@@ -1,7 +1,14 @@
 {
+<<<<<<< HEAD
   "name": "Anime3rb",
   "package": "eu.kanade.tachiyomi.animeextension.ar.anime3rb",
   "version": 1,
   "lang": "ar",
   "nsfw": false
+=======
+  "name": "Anime3rb-Josef",
+  "version": "1.0",
+  "lang": "ar",
+  "type": "anime"
+>>>>>>> c9624b8d6067dd62381ef1ba0db054ef89659cc7
 }
